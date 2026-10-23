@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salon Services — BAS SALON | Haircuts, Color, Treatments in Kannur</title>
+  <meta name="description" content="Explore bespoke salon services at BAS SALON: precision haircuts, signature blowouts, balayage, keratin smoothing, and deep conditioning in Thana, Kannur.">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Salon Services — BAS SALON">
+  <meta property="og:description" content="Discover our tailored menu of haircutting, coloring, smoothing, and hair wellness services.">
+  <meta property="og:image" content="assets/images/layered-cut.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo-link" aria-label="BAS SALON Homepage">
+        <img src="assets/images/logo.png" alt="BAS SALON Logo" class="brand-logo-img" width="48" height="48">
+        <div class="brand-text">
+          <span class="brand-name">BAS SALON</span>
+          <span class="brand-tagline">HAIR &bull; BEAUTY &bull; CRAFT</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="prices.html" class="nav-link">Price List</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <div class="nav-actions">
+          <a href="contact.html" class="btn btn-primary btn-sm">Book Appointment</a>
+        </div>
+      </nav>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNavDrawer">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav-backdrop" id="navBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation Drawer">
+    <div>
+      <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 2rem;">
+        <img src="assets/images/logo.png" alt="BAS SALON" width="40" height="40" class="brand-logo-img">
+        <span class="brand-name" style="font-size: 1.25rem;">BAS SALON</span>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link"><span>Home</span> <span>&rarr;</span></a></li>
+        <li><a href="about.html" class="mobile-nav-link"><span>About</span> <span>&rarr;</span></a></li>
+        <li><a href="services.html" class="mobile-nav-link active"><span>Services</span> <span>&rarr;</span></a></li>
+        <li><a href="prices.html" class="mobile-nav-link"><span>Price List</span> <span>&rarr;</span></a></li>
+        <li><a href="gallery.html" class="mobile-nav-link"><span>Gallery</span> <span>&rarr;</span></a></li>
+        <li><a href="contact.html" class="mobile-nav-link"><span>Contact</span> <span>&rarr;</span></a></li>
+      </ul>
+      <div style="margin-top: 1.5rem;">
+        <a href="contact.html" class="btn btn-primary btn-block">Book Appointment</a>
+      </div>
+    </div>
+
+    <div class="mobile-drawer-footer">
+      <div class="mobile-info-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9A52E" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        <span>Thana, Kannur, Kerala</span>
+      </div>
+      <div class="mobile-info-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9A52E" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        <span>Daily 9:00 AM – 9:00 PM</span>
+      </div>
+    </div>
+  </aside>
+
+  <main id="mainContent">
+
+    <!-- Page Header -->
+    <section class="section bg-secondary text-center" style="padding-top: 4rem; padding-bottom: 3.5rem; border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <span class="section-eyebrow" style="justify-content: center;">Bespoke Hairdressing</span>
+        <h1 class="section-title">Salon Services &amp; <span class="gold-text">Treatments</span></h1>
+        <p class="section-subtitle">
+          From tailored haircuts and signature blowouts to artistic coloring and revitalizing hair spas. Every service is customized to your hair length and lifestyle.
+        </p>
+        <div class="gold-divider"></div>
+      </div>
+    </section>
+
+    <!-- Services Catalog Grid -->
+    <section class="section bg-primary">
+      <div class="container">
+
+        <div class="services-grid">
+
+          <!-- 1. Layered Haircut -->
+          <article class="service-card">
+            <div class="service-img-wrapper">
+              <img src="assets/images/layered-cut.jpg" alt="Layered haircut and blowdry" class="service-img" loading="lazy" width="600" height="400">
+              <span class="service-tag">Cuts &amp; Styling</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Precision Layered Haircut</h3>
+              <p class="service-desc">
+                Custom contouring and texture removal designed to release weight, frame the face, and create natural movement. Includes wash and blowdry finish.
+              </p>
+              <div class="service-footer">
+                <span class="service-price-note">Consultation Quote</span>
+                <button type="button" class="btn btn-secondary btn-sm" data-service-enquiry="Precision Layered Haircut">
+                  Enquire &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Signature Blowout -->
+          <article class="service-card">
+            <div class="service-img-wrapper">
+              <img src="assets/images/signature-blowout.jpg" alt="Professional salon blowout" class="service-img" loading="lazy" width="600" height="400">
+              <span class="service-tag">Styling</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Signature Volume Blowout</h3>
+              <p class="service-desc">
+                Luxury hair wash followed by a professional round-brush blowout. Choose between bouncy Hollywood waves, sleek straight silk, or textured volume.
+              </p>
+              <div class="service-footer">
+                <span class="service-price-note">Consultation Quote</span>
+                <button type="button" class="btn btn-secondary btn-sm" data-service-enquiry="Signature Volume Blowout">
+                  Enquire &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Balayage & Highlights -->
+          <article class="service-card">
+            <div class="service-img-wrapper">
+              <img src="assets/images/glossy-highlights.jpg" alt="Balayage and highlights" class="service-img" loading="lazy" width="600" height="400">
+              <span class="service-tag">Color</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Custom Balayage &amp; Highlights</h3>
+              <p class="service-desc">
+                Hand-painted balayage and foil highlights blended for seamless root transitions and luminous shine. Customized toning ensures zero brassiness.
+              </p>
+              <div class="service-footer">
+                <span class="service-price-note">Consultation Quote</span>
+                <button type="button" class="btn btn-secondary btn-sm" data-service-enquiry="Custom Balayage &amp; Highlights">
+                  Enquire &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Global Color & Root Touch-Up -->
+          <article class="service-card">
+            <div class="service-img-wrapper">
+              <img src="assets/images/hair-coloring.jpg" alt="Professional hair coloring" class="service-img" loading="lazy" width="600" height="400">
+              <span class="service-tag">Color</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Full Coverage &amp; Root Color</h3>
+              <p class="service-desc">
+                Rich, multidimensional hues from deep espresso to warm caramels and vibrant copper tones. Perfect grey coverage and glossy color refreshment.
+              </p>
+              <div class="service-footer">
+                <span class="service-price-note">Consultation Quote</span>
+                <button type="button" class="btn btn-secondary btn-sm" data-service-enquiry="Full Coverage &amp; Root Color">
+                  Enquire &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Keratin Smoothing Treatment -->
+          <article class="service-card">
+            <div class="service-img-wrapper">
+              <img src="assets/images/brunette-long.jpg" alt="Long sleek glossy hair" class="service-img" loading="lazy" width="600" height="400">
+              <span class="service-tag">Smoothing &amp; Care</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Keratin Smoothing &amp; Rebonding</h3>
+              <p class="service-desc">
+                Tame unruly frizz, reduce daily styling time, and lock in mirror-like shine. Gentle formulas that improve overall hair manageability.
+              </p>
+              <div class="service-footer">
+                <span class="service-price-note">Consultation Quote</span>
+                <button type="button" class="btn btn-secondary btn-sm" data-service-enquiry="Keratin Smoothing &amp; Rebonding">
+                  Enquire &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Deep Conditioning & Scalp Therapy -->
+          <article class="service-card">
+            <div class="service-img-wrapper">
+              <img src="assets/images/hair-treatment.jpg" alt="Deep hair conditioning and spa" class="service-img" loading="lazy" width="600" height="400">
+              <span class="service-tag">Hair Spa</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Restorative Hair Spa Therapy</h3>
+              <p class="service-desc">
+                Intensive moisture infusion, protein rebuild, and relaxing scalp massage. Designed to revive dry, sun-stressed, or chemically processed hair.
+              </p>
+              <div class="service-footer">
+                <span class="service-price-note">Consultation Quote</span>
+                <button type="button" class="btn btn-secondary btn-sm" data-service-enquiry="Restorative Hair Spa Therapy">
+                  Enquire &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. Modern Bob & Texturizing -->
+          <article class="service-card">
+            <div class="service-img-wrapper">
+              <img src="assets/images/modern-cut.jpg" alt="Modern bob haircut" class="service-img" loading="lazy" width="600" height="400">
+              <span class="service-tag">Cuts &amp; Styling</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Modern Bob &amp; Pixie Sculpt</h3>
+              <p class="service-desc">
+                Geometric clean lines, textured ends, or soft French bob cuts tailored specifically to your jawline, neck, and profile.
+              </p>
+              <div class="service-footer">
+                <span class="service-price-note">Consultation Quote</span>
+                <button type="button" class="btn btn-secondary btn-sm" data-service-enquiry="Modern Bob &amp; Pixie Sculpt">
+                  Enquire &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. Occasion & Bridal Hair Styling -->
+          <article class="service-card">
+            <div class="service-img-wrapper">
+              <img src="assets/images/bridal-styling.jpg" alt="Special occasion and bridal hair styling" class="service-img" loading="lazy" width="600" height="400">
+              <span class="service-tag">Occasion</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Bridal &amp; Occasion Styling</h3>
+              <p class="service-desc">
+                Sophisticated updos, romantic cascading curls, and structured occasion styling engineered to remain picture-perfect throughout celebrations.
+              </p>
+              <div class="service-footer">
+                <span class="service-price-note">Consultation Quote</span>
+                <button type="button" class="btn btn-secondary btn-sm" data-service-enquiry="Bridal &amp; Occasion Styling">
+                  Enquire &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. Men's Haircut & Beard Care -->
+          <article class="service-card">
+            <div class="service-img-wrapper">
+              <img src="assets/images/style-mens-beard.jpg" alt="Gentleman haircut and beard styling" class="service-img" loading="lazy" width="600" height="400">
+              <span class="service-tag">Grooming</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Men's Executive Cut &amp; Beard Trim</h3>
+              <p class="service-desc">
+                Sharp skin fades, scissor-over-comb classic tapers, and precision beard contouring with hot towel finish and nourishing beard balm.
+              </p>
+              <div class="service-footer">
+                <span class="service-price-note">Consultation Quote</span>
+                <button type="button" class="btn btn-secondary btn-sm" data-service-enquiry="Men's Executive Cut &amp; Beard Trim">
+                  Enquire &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Consultation Banner -->
+        <div class="pricing-disclaimer-card" style="margin-top: 4rem;">
+          <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--gold-bright); margin-bottom: 0.75rem;">
+            Unsure Which Service Suits Your Hair?
+          </h3>
+          <p style="color: var(--text-secondary); max-width: 640px; margin: 0 auto 1.5rem auto; font-size: 0.9375rem;">
+            Every head of hair is unique. Send a quick message to our team on WhatsApp with a photo or description of your hair, and we will happily guide you on suitable treatments and exact pricing.
+          </p>
+          <button type="button" class="btn btn-whatsapp action-whatsapp">
+            Message Us for Free Styling Advice
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Mobile Fixed Bottom Action Bar -->
+  <nav class="mobile-action-bar" aria-label="Quick Mobile Actions">
+    <a href="#" class="mobile-action-btn whatsapp action-whatsapp" aria-label="WhatsApp Enquiry">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.599 2.679-.702c.971.532 1.834.82 2.781.82 3.182 0 5.768-2.587 5.768-5.766.001-3.182-2.585-5.77-5.768-5.77zm0-2c4.288 0 7.768 3.48 7.768 7.77 0 4.289-3.48 7.767-7.768 7.767-1.353 0-2.628-.35-3.737-.962l-4.294 1.125 1.144-4.18c-.694-1.164-1.081-2.522-1.081-3.75 0-4.29 3.48-7.77 7.768-7.77z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="tel:+919895014575" class="mobile-action-btn call action-call" aria-label="Call Salon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <span>Call</span>
+    </a>
+    <a href="https://maps.app.goo.gl/YcxcJFjoY9m1UB8YA" target="_blank" rel="noopener noreferrer" class="mobile-action-btn directions action-directions" aria-label="Directions to BAS SALON">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+      <span>Directions</span>
+    </a>
+  </nav>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <div class="footer-logo-row">
+            <img src="assets/images/logo.png" alt="BAS SALON Logo" width="40" height="40" class="brand-logo-img">
+            <span class="brand-name" style="font-size: 1.35rem;">BAS SALON</span>
+          </div>
+          <p class="footer-brand-desc">
+            A contemporary salon dedicated to personalized haircuts, refined styling, artisan color, and restorative hair wellness in Kannur, Kerala.
+          </p>
+          <button type="button" class="btn btn-whatsapp btn-sm action-whatsapp">Chat on WhatsApp</button>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About BAS SALON</a></li>
+            <li><a href="services.html" class="footer-link">Salon Services</a></li>
+            <li><a href="prices.html" class="footer-link">Price Guide</a></li>
+            <li><a href="gallery.html" class="footer-link">Style Gallery</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; Enquiries</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Opening Hours</h4>
+          <div class="footer-hours-row">
+            <span>Monday – Saturday</span>
+            <span class="gold-accent">9:00 AM – 9:00 PM</span>
+          </div>
+          <div class="footer-hours-row">
+            <span>Sunday</span>
+            <span class="gold-accent">9:00 AM – 9:00 PM</span>
+          </div>
+          <p style="font-size: 0.8125rem; color: var(--text-muted); margin-top: 1rem;">
+            Appointments recommended for optimal consultation time.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Location &amp; Contact</h4>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+            Kannur - Kuthuparamba Rd, Thayatheru,<br>
+            Thana, Kannur, Kerala 670002
+          </p>
+          <p style="font-size: 0.875rem; color: var(--gold-bright); margin-bottom: 1rem;">
+            Tel: +91 98950 14575
+          </p>
+          <a href="https://maps.app.goo.gl/YcxcJFjoY9m1UB8YA" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="display: inline-flex;">
+            Open in Google Maps &rarr;
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> BAS SALON. All rights reserved.</p>
+        <p>Thana, Kannur &bull; Standalone Static Website</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hair Style Portfolio &amp; Gallery — BAS SALON Kannur</title>
+  <meta name="description" content="Browse 25 curated photographs of haircuts, balayage, blowouts, treatments, and salon atmosphere at BAS SALON in Thana, Kannur.">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hair Style Portfolio &amp; Gallery — BAS SALON">
+  <meta property="og:description" content="Explore our visual portfolio of haircuts, styling, coloring, and salon craft in Kannur.">
+  <meta property="og:image" content="assets/images/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo-link" aria-label="BAS SALON Homepage">
+        <img src="assets/images/logo.png" alt="BAS SALON Logo" class="brand-logo-img" width="48" height="48">
+        <div class="brand-text">
+          <span class="brand-name">BAS SALON</span>
+          <span class="brand-tagline">HAIR &bull; BEAUTY &bull; CRAFT</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="prices.html" class="nav-link">Price List</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <div class="nav-actions">
+          <a href="contact.html" class="btn btn-primary btn-sm">Book Appointment</a>
+        </div>
+      </nav>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNavDrawer">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav-backdrop" id="navBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation Drawer">
+    <div>
+      <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 2rem;">
+        <img src="assets/images/logo.png" alt="BAS SALON" width="40" height="40" class="brand-logo-img">
+        <span class="brand-name" style="font-size: 1.25rem;">BAS SALON</span>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link"><span>Home</span> <span>&rarr;</span></a></li>
+        <li><a href="about.html" class="mobile-nav-link"><span>About</span> <span>&rarr;</span></a></li>
+        <li><a href="services.html" class="mobile-nav-link"><span>Services</span> <span>&rarr;</span></a></li>
+        <li><a href="prices.html" class="mobile-nav-link"><span>Price List</span> <span>&rarr;</span></a></li>
+        <li><a href="gallery.html" class="mobile-nav-link active"><span>Gallery</span> <span>&rarr;</span></a></li>
+        <li><a href="contact.html" class="mobile-nav-link"><span>Contact</span> <span>&rarr;</span></a></li>
+      </ul>
+      <div style="margin-top: 1.5rem;">
+        <a href="contact.html" class="btn btn-primary btn-block">Book Appointment</a>
+      </div>
+    </div>
+
+    <div class="mobile-drawer-footer">
+      <div class="mobile-info-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9A52E" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        <span>Thana, Kannur, Kerala</span>
+      </div>
+      <div class="mobile-info-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9A52E" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        <span>Daily 9:00 AM – 9:00 PM</span>
+      </div>
+    </div>
+  </aside>
+
+  <main id="mainContent">
+
+    <!-- Page Header -->
+    <section class="section bg-secondary text-center" style="padding-top: 4rem; padding-bottom: 3rem; border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <span class="section-eyebrow" style="justify-content: center;">Visual Showcase</span>
+        <h1 class="section-title">The <span class="gold-text">Style Portfolio</span></h1>
+        <p class="section-subtitle">
+          An editorial curation of 25 photographs illustrating hair cuts, color transformations, textured styling, and salon craft at BAS SALON.
+        </p>
+        <div class="gold-divider"></div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs" role="tablist" aria-label="Gallery category filters">
+          <button class="filter-btn active" data-filter="all">All (25)</button>
+          <button class="filter-btn" data-filter="cuts">Cuts &amp; Blowouts</button>
+          <button class="filter-btn" data-filter="color">Color &amp; Highlights</button>
+          <button class="filter-btn" data-filter="treatment">Treatments &amp; Texture</button>
+          <button class="filter-btn" data-filter="grooming">Men's Grooming</button>
+          <button class="filter-btn" data-filter="salon">Salon &amp; Craft</button>
+        </div>
+
+        <p class="editorial-note">
+          *Illustrative portfolio photography &bull; Tap any image to expand in full lightbox
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery Grid Section -->
+    <section class="section bg-primary" style="padding-top: 3.5rem;">
+      <div class="container">
+        
+        <div class="gallery-grid" id="portfolioGrid">
+
+          <!-- 01: Hero / Signature -->
+          <div class="gallery-item" data-category="cuts">
+            <img src="assets/images/hero.jpg" alt="Luxury salon hair styling" class="gallery-img" loading="eager" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Editorial</span>
+              <h3 class="gallery-title">Luxury Salon Styling</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 02: Long Brunette Waves -->
+          <div class="gallery-item" data-category="cuts">
+            <img src="assets/images/brunette-long.jpg" alt="Long styled brunette hair" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Long Hair</span>
+              <h3 class="gallery-title">Silk Brunette Waves</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 03: Layered Haircut -->
+          <div class="gallery-item" data-category="cuts">
+            <img src="assets/images/layered-cut.jpg" alt="Layered haircut with movement" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Layering</span>
+              <h3 class="gallery-title">Movement &amp; Volume Cut</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 04: Signature Blowout -->
+          <div class="gallery-item" data-category="cuts">
+            <img src="assets/images/signature-blowout.jpg" alt="Professional volume blowout" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Blowout</span>
+              <h3 class="gallery-title">Signature Volumizing Blowdry</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 05: Highlights & Balayage -->
+          <div class="gallery-item" data-category="color">
+            <img src="assets/images/glossy-highlights.jpg" alt="Soft glossy highlights and balayage" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Balayage</span>
+              <h3 class="gallery-title">Sun-Kissed Golden Highlights</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 06: Modern Bob -->
+          <div class="gallery-item" data-category="cuts">
+            <img src="assets/images/modern-cut.jpg" alt="Precision modern bob haircut" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Precision Cut</span>
+              <h3 class="gallery-title">Modern Architectural Bob</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 07: Hair Coloring -->
+          <div class="gallery-item" data-category="color">
+            <img src="assets/images/hair-coloring.jpg" alt="Artisan hair coloring" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Color</span>
+              <h3 class="gallery-title">Multidimensional Tinting</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 08: Hair Treatment Spa -->
+          <div class="gallery-item" data-category="treatment">
+            <img src="assets/images/hair-treatment.jpg" alt="Deep restorative hair spa masque" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Care</span>
+              <h3 class="gallery-title">Restorative Conditioning Spa</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 09: Salon Interior Stations -->
+          <div class="gallery-item" data-category="salon">
+            <img src="assets/images/salon-interior-1.jpg" alt="Salon styling suites and warm mirrors" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Ambiance</span>
+              <h3 class="gallery-title">Styling Suite Stations</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 10: Salon Reception -->
+          <div class="gallery-item" data-category="salon">
+            <img src="assets/images/salon-interior-2.jpg" alt="Salon seating and reception lounge" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Lounge</span>
+              <h3 class="gallery-title">Guest Welcome Area</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 11: Styling In Progress Brush -->
+          <div class="gallery-item" data-category="salon">
+            <img src="assets/images/styling-progress-1.jpg" alt="Stylist blow drying hair" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Artistry</span>
+              <h3 class="gallery-title">Thermal Brush Styling</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 12: Scissor Sculpting -->
+          <div class="gallery-item" data-category="salon">
+            <img src="assets/images/styling-progress-2.jpg" alt="Stylist precision haircutting" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Technique</span>
+              <h3 class="gallery-title">Scissor-Over-Comb Precision</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 13: Hair Texture Close-Up -->
+          <div class="gallery-item" data-category="treatment">
+            <img src="assets/images/hair-texture.jpg" alt="Smooth hair texture close-up" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Texture</span>
+              <h3 class="gallery-title">Lustrous Hair Texture</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 14: Salon Tools -->
+          <div class="gallery-item" data-category="salon">
+            <img src="assets/images/salon-tools.jpg" alt="Professional shears and salon equipment" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Equipment</span>
+              <h3 class="gallery-title">Master Styling Instruments</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 15: Salon Hair Products -->
+          <div class="gallery-item" data-category="salon">
+            <img src="assets/images/salon-products.jpg" alt="Professional hair care products" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Products</span>
+              <h3 class="gallery-title">Curated Hair Care Formulas</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 16: Transformation 1 -->
+          <div class="gallery-item" data-category="cuts">
+            <img src="assets/images/transformation-1.jpg" alt="Hair transformation result" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Transformation</span>
+              <h3 class="gallery-title">Polished Transformation</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 17: Transformation 2 -->
+          <div class="gallery-item" data-category="color">
+            <img src="assets/images/transformation-2.jpg" alt="Rich brunette shine makeover" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Transformation</span>
+              <h3 class="gallery-title">Espresso Gloss Finish</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 18: French Short Bob -->
+          <div class="gallery-item" data-category="cuts">
+            <img src="assets/images/style-short-bob.jpg" alt="French bob haircut" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Short Hair</span>
+              <h3 class="gallery-title">French Bob with Soft Fringe</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 19: Defined Curls -->
+          <div class="gallery-item" data-category="treatment">
+            <img src="assets/images/style-curls.jpg" alt="Defined curl texture and hydration" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Curly Hair</span>
+              <h3 class="gallery-title">Hydrated Botanical Curls</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 20: Hollywood Waves -->
+          <div class="gallery-item" data-category="cuts">
+            <img src="assets/images/style-waves.jpg" alt="Glamorous Hollywood styling waves" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Special Occasion</span>
+              <h3 class="gallery-title">Cascading Glamour Waves</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 21: Men's Taper Fade -->
+          <div class="gallery-item" data-category="grooming">
+            <img src="assets/images/style-mens-fade.jpg" alt="Men taper fade haircut" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Men's Hair</span>
+              <h3 class="gallery-title">Clean Low Taper Fade</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 22: Men's Beard Trim -->
+          <div class="gallery-item" data-category="grooming">
+            <img src="assets/images/style-mens-beard.jpg" alt="Men beard sculpting and fade" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Beard Sculpt</span>
+              <h3 class="gallery-title">Gentleman Beard Contouring</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 23: Scalp Wash Basin -->
+          <div class="gallery-item" data-category="treatment">
+            <img src="assets/images/salon-wash-basin.jpg" alt="Scalp massage and wash basin" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Relaxation</span>
+              <h3 class="gallery-title">Hydrotherapy Wash Basin</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 24: Bridal Occasion Styling -->
+          <div class="gallery-item" data-category="cuts">
+            <img src="assets/images/bridal-styling.jpg" alt="Bridal hairstyle artistry" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Bridal</span>
+              <h3 class="gallery-title">Festive Occasion Artistry</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+          <!-- 25: Stylist Consultation -->
+          <div class="gallery-item" data-category="salon">
+            <img src="assets/images/consultation.jpg" alt="Hair consultation session" class="gallery-img" loading="lazy" width="400" height="500">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Consultation</span>
+              <h3 class="gallery-title">Personal Style Analysis</h3>
+              <span class="gallery-expand-hint">Tap to view</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Gallery Bottom CTA -->
+        <div class="text-center" style="margin-top: 4rem;">
+          <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">
+            Inspired by one of the styles above? Save the photo or message our stylists directly.
+          </p>
+          <button type="button" class="btn btn-whatsapp action-whatsapp">
+            Discuss a Style on WhatsApp
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="Image Preview">
+    <button class="lightbox-btn lightbox-close" aria-label="Close image preview">&times;</button>
+    <button class="lightbox-btn lightbox-prev" aria-label="Previous image">&larr;</button>
+    <button class="lightbox-btn lightbox-next" aria-label="Next image">&rarr;</button>
+    <div class="lightbox-content-box">
+      <img src="" alt="" class="lightbox-img">
+      <div class="lightbox-caption-box">
+        <h4 class="lightbox-title"></h4>
+        <p class="lightbox-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Fixed Bottom Action Bar -->
+  <nav class="mobile-action-bar" aria-label="Quick Mobile Actions">
+    <a href="#" class="mobile-action-btn whatsapp action-whatsapp" aria-label="WhatsApp Enquiry">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.599 2.679-.702c.971.532 1.834.82 2.781.82 3.182 0 5.768-2.587 5.768-5.766.001-3.182-2.585-5.77-5.768-5.77zm0-2c4.288 0 7.768 3.48 7.768 7.77 0 4.289-3.48 7.767-7.768 7.767-1.353 0-2.628-.35-3.737-.962l-4.294 1.125 1.144-4.18c-.694-1.164-1.081-2.522-1.081-3.75 0-4.29 3.48-7.77 7.768-7.77z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="tel:+919895014575" class="mobile-action-btn call action-call" aria-label="Call Salon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <span>Call</span>
+    </a>
+    <a href="https://maps.app.goo.gl/YcxcJFjoY9m1UB8YA" target="_blank" rel="noopener noreferrer" class="mobile-action-btn directions action-directions" aria-label="Directions to BAS SALON">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+      <span>Directions</span>
+    </a>
+  </nav>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <div class="footer-logo-row">
+            <img src="assets/images/logo.png" alt="BAS SALON Logo" width="40" height="40" class="brand-logo-img">
+            <span class="brand-name" style="font-size: 1.35rem;">BAS SALON</span>
+          </div>
+          <p class="footer-brand-desc">
+            A contemporary salon dedicated to personalized haircuts, refined styling, artisan color, and restorative hair wellness in Kannur, Kerala.
+          </p>
+          <button type="button" class="btn btn-whatsapp btn-sm action-whatsapp">Chat on WhatsApp</button>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About BAS SALON</a></li>
+            <li><a href="services.html" class="footer-link">Salon Services</a></li>
+            <li><a href="prices.html" class="footer-link">Price Guide</a></li>
+            <li><a href="gallery.html" class="footer-link">Style Gallery</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; Enquiries</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Opening Hours</h4>
+          <div class="footer-hours-row">
+            <span>Monday – Saturday</span>
+            <span class="gold-accent">9:00 AM – 9:00 PM</span>
+          </div>
+          <div class="footer-hours-row">
+            <span>Sunday</span>
+            <span class="gold-accent">9:00 AM – 9:00 PM</span>
+          </div>
+          <p style="font-size: 0.8125rem; color: var(--text-muted); margin-top: 1rem;">
+            Appointments recommended for optimal consultation time.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Location &amp; Contact</h4>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+            Kannur - Kuthuparamba Rd, Thayatheru,<br>
+            Thana, Kannur, Kerala 670002
+          </p>
+          <p style="font-size: 0.875rem; color: var(--gold-bright); margin-bottom: 1rem;">
+            Tel: +91 98950 14575
+          </p>
+          <a href="https://maps.app.goo.gl/YcxcJFjoY9m1UB8YA" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="display: inline-flex;">
+            Open in Google Maps &rarr;
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> BAS SALON. All rights reserved.</p>
+        <p>Thana, Kannur &bull; Standalone Static Website</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

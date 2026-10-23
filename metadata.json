@@ -1,0 +1,6 @@
+{
+  "name": "BAS SALON",
+  "description": "Official website for BAS SALON – Premium hair styling, precision haircuts, bespoke coloring, and luxury treatments in Thana, Kannur.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
